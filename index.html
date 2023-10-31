@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- Ordenamos a Internet Explorer usar su motor de renderizado más reciente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Viewport para diseño web responsivo -->
+
+    <!-- para resetear el css de los navegadores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- vínculos a estilos y recursos-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/comparador.css">
+    <link rel="recursos" href="recursos/">
+    <title>Ynteryor | Diseño que impulsa tus ventas</title>
+    <meta name="description" content="Pablo Elices's UX &amp; Product designer portfolio">
+    <link rel="icon" type="image/png" href="recursos/favicon-ynteryor.png">
+</head>
+<body>
+    <nav class="navbar">
+        <ul><a href="index.html"><img src="recursos/logo-negativo-ynteryor.svg" alt="YNTERYOR"></a></ul>
+        <ul>
+            <li><a href="caso_practico.html">Caso Práctico</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="hero">
+            <h1>Diseño que <br> <span>impulsa</span> tus ventas</h1>
+            <div>
+                <p>En Ynteryor transformamos espacios para apoyar tus argumentos de venta. Vende mejor con nuestros diseños realistas. Son el impulso que necesitas para aumentar tus ventas.</p>
+                <a href="contacto.html" class="btn btn-primary"> impulsa tus ventas</a>
+            </div>
+        </div>
+        <div class="argumentos">
+            <div class="argumento">
+                <img src="recursos/image_argumento_01.png" alt="">
+                <span><em>Gana</em> la<br>curiosidad <br>de clientes</span>
+            </div>
+            <div class="argumento">
+                <img src="recursos/image_argumento_02.png" alt="">
+                <span><em>Mejora</em> tu<br>proceso de<br>captación</span>
+            </div>
+            <div class="argumento">
+                <img src="recursos/image_argumento_03.png" alt="">
+                <span><em>Compite</em><br>contra<br>los grandes</span>
+            </div>
+            <div class="argumento">
+                <img src="recursos/image_argumento_04.png" alt="">
+                <span><em>Salva</em><br>las ventas<br>complicadas</span>
+            </div>
+        </div>
+        <div id="que-hacemos">
+            <h2>¿Qué hacemos?</h2>
+            <div>
+                <p>
+                    En Ynteryor sabemos que <b>1 imagen > 1000 palabras</b>. Pero... ¿y si son muchas imágenes? ¿Y si son vídeos? ¿Y si son imágenes 360º interactivas? ¿Y si creamos recorridos virtuales? Esto es mucho más que palabras.
+                </p>
+                <p>
+                    Por ello, <b>transformamos espacios digitalmente</b> que impulsan tus argumentos de venta con toda la fuerza de los recursos audiovisuales.</p>
+                <p>
+                    Nuestros diseños presentan historias adaptadas a la personalidad de cada cliente que llaman su atención, ganan su curiosidad y le permiten visualizar todo el potencial de la compra.</p>
+                <p>
+                    Queremos ayudarte a competir contra los grandes y que puedas salvar las ventas complicadas de aquellas propiedades que necesitan un impulso extra que las revitalice.
+                </p>
+                <a href="contacto.html" class="btn btn-secondary"> impulsa tus ventas</a>
+            </div>
+            <img src="recursos/image-sofa-japandi.png" alt="salón con sofá modular japandi">
+        </div>
+        <div id="como-lo-hacemos">
+            <div>
+                <h2>¿Cómo lo hacemos?</h2>
+                <p>
+                    En Ynteryor <b>fusionamos funcionalidad y estética</b> para ofrecer prácticos y encantadores espacios adaptados a los diferentes usos y estilos de vida actual.
+                </p>
+                <p>
+                    Nuestro meticuloso enfoque y atención al detalle nos permite crear interiores que no solo sean visualmente impactantes, sino que también sean altamente funcionales, optimizando el uso del espacio y facilitando la vida diaria de quienes podrían disfrutarlos.
+                </p>
+                <p>
+                    <b>Tú tienes <span>el control</span>.</b> Si quieres que nosotros nos encarguemos del control creativo y artístico estaremos encantados y si por contra, prefieres que nos ajustemos a tus directrices, también podemos hacerlo en el grado que mejor te venga. Desde limitarnos a seguir un plano e indicaciones precisas a orientarte en el diseño para que cumplas con los más altos criterios de funcionalidad y estética.
+                </p>
+                <a href="caso_practico.html">Ver caso práctico<img src="recursos/icono_referencia.svg" style="margin-left: 8px;"></a>
+            </div>
+
+            <div id="comparador">
+                <div class="container">
+                   <div class="image-container">
+                     <img
+                       class="image-before slider-image"
+                      src="recursos/caso-practico/antes_salon.jpg"
+                       alt="salon antes"
+                     />
+                     <img
+                       class="image-after slider-image"
+                       src="recursos/caso-practico/despues/despues_salon_1.jpg"
+                       alt="salon despues"
+                     />
+                   </div>
+                   <!-- step="10" -->
+                   <input
+                     type="range"
+                     min="0"
+                     max="100"
+                     value="50"
+                     aria-label="Percentage of before photo shown"
+                     class="slider"
+                   />
+                   <div class="slider-line" aria-hidden="true"></div>
+                   <div class="slider-button" aria-hidden="true">
+                     <img src="recursos/icono_tirador.svg" alt="">
+                   </div>
+                 </div>
+                 <script src="script.js"></script>
+           </div>
+        </div>
+        <div id="quieres-saber-mas">
+            <h2>¿Quieres saber más?</h2>
+            <p>
+                Si ya has visto el caso práctico y aún así tienes dudas de cómo Ynteryor te puede ayudar, o si tienes algún otro tipo de duda sobre nosotros o nuestros servicios, no dudes en ponerte en contacto para que podamos responder a tus preguntas.
+            </p>
+            <a href="contacto.html" class="btn btn-secondary"> contáctanos</a>
+        </div>
+    </section>
+</body>
+</html>

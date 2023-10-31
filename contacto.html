@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- Ordenamos a Internet Explorer usar su motor de renderizado más reciente -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Viewport para diseño web responsivo -->
+    
+        <!-- para resetear el css de los navegadores -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- vínculos a estilos y recursos-->
+        <link rel="stylesheet" href="estilos/estilos.css">
+        <link rel="recursos" href="recursos/">
+        <title>Contacto</title>
+        <meta name="description" content="Pablo Elices's UX &amp; Product designer portfolio">
+        <link rel="icon" type="image/png" href="recursos/favicon-ynteryor.png">
+    </head>
+<body>
+    <nav class="navbar">
+        <ul><a href="index.html"><img src="recursos/logo-negativo-ynteryor.svg" alt="YNTERYOR"></a></ul>
+        <ul>
+            <li><a href="caso_practico.html">Caso Práctico</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contact-page">
+        <h2>Contacto</h2>
+        <p>Si ya te has decidido a impulsar tus ventas o si quieres saber más, puedes ponerte en contacto a través del siguiente formulario.</p>
+        <div class="contact-content">
+            <div class="formulario">
+                <form action="enviar.php" method="post">
+                    <label for="name">Nombre*</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label for="mail">Email*</label>
+                    <input type="email" name="mail" id="mail" placeholder="email@email.com">
+                    <label for="phone">Teléfono</label>
+                    <input type="text" name="phone" id="phone" placeholder="+34 600000000">
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject" id="subject" placeholder="El asunto de tu mensaje">
+                    <label for="message">Mensaje*</label>
+                    <textarea name="message" id="message" cols="19" rows="10" placeholder="Tu mensaje aquí"></textarea>
+                    <input type="submit" value="Enviar" class="btn-form">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Tu mensaja a Ynteryor ha sido enviado con éxito">
+                </form>
+            </div>
+            <div class="contacto-images">
+                <img src="recursos/contact_images.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

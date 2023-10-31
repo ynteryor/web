@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- Ordenamos a Internet Explorer usar su motor de renderizado más reciente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Viewport para diseño web responsivo -->
+
+    <!-- para resetear el css de los navegadores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- vínculos a estilos y recursos-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/comparador.css">
+    <link rel="recursos" href="recursos/">
+    <title>Revitalizando Vivienda en Madrid</title>
+    <meta name="description" content="Pablo Elices's UX &amp; Product designer portfolio">
+    <link rel="icon" type="image/png" href="recursos/favicon-ynteryor.png">
+</head>
+<body>
+    <nav class="navbar">
+        <ul><a href="index.html"><img src="recursos/logo-negativo-ynteryor.svg" alt="YNTERYOR"></a></ul>
+        <ul>
+            <li><a href="caso_practico.html">Caso Práctico</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="cp-hero">
+            <div class="cp-hero-texto">
+                <h1><span>Revitalizando</span><br> una vivienda <br> en Madrid</h1>
+                <p>Descubre cómo transformamos esta vivienda de 78m2 en Madrid para convertirla en un claro ejemplo de éxito.</p>
+            </div>
+            <div class="cp-hero-imagenes">
+                <img src="recursos/caso-practico/cp-hero-image.png" alt="">
+            </div>   
+        </div>
+        <div class="cp-overview">
+            <div class="cp-overview-text">
+                <p>
+                    Esta vivienda del año 1961, tiene alguna reforma, está bien conservada y permite entrar a vivir. Sin embargo, no llama la atención de posibles compradores porque tiene poco atractivo.
+                </p>
+                <p>
+                    3 habitaciones, 1 de ellas muy pequeña, 1 solo baño y la cocina lejos del salón, hacen que esta propiedad no resalte entre quienes la pudieran querer para vivir ni tampoco entre inversores ya que su precio es demasiado alto.
+                </p>
+                <p>
+                    Veamos cómo YNTERYOR ha rediseñado el espacio y qué materiales se han creado para ayudar a su venta.
+                </p>
+            </div>
+            <img src="recursos/caso-practico/planovivienda.jpg" alt="plano vivienda original">
+        </div>
+        <div class="cp-sala" id="sala-salon">
+            <div class="cp-sala-content">
+                <h2>Salón - Comedor</h2>
+                <p>
+                    El salón comedor no es excesivamente espacioso y tiene un diseño ya desfasado anclado en los años 90. Si bien es cierto que el suelo está muy bien, las paredes siguen siendo de gotelé, la carpintería exterior es de una simple hoja y la interior de sapelly algo desgastado.
+                </p>
+                <p>
+                    Por otra parte, la falta de un espacio de comedor bien definido puede auyentar a los compradores  que ven menos posibilidades.
+                </p>
+                <p>
+                    De igual manera, se ha trabajado la iluminación de todo el espacio para conseguir una iluminación moderna y eficaz que saque lo mejor de cada elemento de la composición.
+                </p>
+            </div>   
+            <div class="cp-gallery">
+              <img src="recursos/caso-practico/antes_salon.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_salon_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_salon2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_salon_2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_salon3.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_salon_3.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="lightbox" id="lightbox">
+              <div class="lightbox-content">
+                  <span class="close" onclick="closeLightbox()">&times;</span>
+                  <img id="lightbox-image">
+                  <button class="nav-btn prev-btn" onclick="prevImage()">&lt; </button>
+                  <img class="lightbox-content" id="lightbox-image">
+                  <button class="nav-btn next-btn" onclick="nextImage()"> &gt;</button>
+              </div>
+          </div>
+        </div>
+        <div class="cp-sala" id="sala-cocina">
+            <div class="cp-sala-content">
+                <h2>Cocina</h2>
+                <p>
+                    La verdad es que la cocina no esta nada mal y podría seguir encajando en el día a día de la mayoría de compradores. Sin embargo, su diminuto tamaño le hace un flaco favor. Dos bancadas casi pegadas y el desgaste típico de los años, hacen que esta parte de la vivienda tampoco llegue a conectar con los posibles interesados.
+                </p>
+                <p>
+                    Como solución, se adapta el diseño a uno moderno y orgánico, donde el entrelazado de los azulejos del suelo nos guía a través del espacio y resalta el aspecto orgánico y natural de la madera que conecta con nosotros.
+                </p>
+            </div>
+            <div class="cp-gallery">
+              <img src="recursos/caso-practico/antes_cocina1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_cocina_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_cocina2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_cocina_2.jpg" alt="" class="thumbnail">
+              
+            </div>
+        </div>
+        <div class="cp-sala" id="sala-bano">
+            <div class="cp-sala-content">
+                <h2>Baño</h2>
+                <p>
+                    Pese a que la vivienda cuenta con un solo baño, éste tampoco tiene capacidad de impresionar debido a su reducido tamaño y su claro deterioro. 
+                </p>
+                <p>
+                    En consecuencia, para cautivar a los espectadores, se ha colocado una ducha moderna y empotrada al final, el WC queda medio escondido y el lavabo tiene la presencia que le corresponde.
+                </p>
+            </div>
+            <div class="cp-gallery">
+              <img src="recursos/caso-practico/antes_bano1_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_bano_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_bano1_2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_bano_2.jpg" alt="" class="thumbnail">
+            </div>
+        </div>
+        <div class="cp-sala" id="sala-habitaciones">
+            <div class="cp-sala-content">
+                <h2>Habitaciones</h2>
+                <p>
+                    El piso cuenta con 3 habitaciones, de las cuales una es bastante pequeña y posiblemente su uso sea como trastero o despacho más que de habitación. Sin embargo, para maximizar las posibilidades de venta, en Ynteryor hemos montado una habitación completa donde perféctamente tendría hueco un invitado o un niño pequeño. 
+                </p>
+                <p>
+                    Respecto a las otras 2 habitaciones, se ha potenciado su tamaño y la posibilidad de armarios empotrados para mostrar cómo podrían ser armarios modernos y acordes a la estética del piso que cupieran en ese espacio.
+                </p>
+            </div>
+            <div class="cp-gallery">
+              <img src="recursos/caso-practico/antes_habita1_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion1_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_habita1_2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion1_2.jpeg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_habita2_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion2_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_habita2_2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion2_2.jpg" alt="" class="thumbnail">
+
+              <img src="recursos/caso-practico/antes_habita3_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion3_1.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/antes_habita3_2.jpg" alt="" class="thumbnail">
+              <img src="recursos/caso-practico/despues/despues_habitacion3_2.jpg" alt="" class="thumbnail">
+              
+            </div>
+        </div>
+        <div class="cp-resultado-final">
+            <div class="cp-resultado-final-content">
+                <h2>Resultado final</h2>
+                <p>
+                    Para este caso, las estancias no se han diseñado individualmente, sino que forman parte de un todo que también incluye las zonas comunes y permite generar un proyecto sólido y compacto listo para ayudar en la venta.
+                
+                </p>
+                <p>
+                    Además de las imágenes mostradas previamente y otras vistas desde otros ángulos que quedan por mostrar, para este proyecto se han generado vistas de <span>plano 3D</span>, <span>panorámicas 360</span> que se pueden compartir en diferentes plataformas y redes sociales como Facebook, un <span>tour virtual</span> y  diferentes <span>vídeos</span> de las estancias más puntuales.
+                </p>
+                <p>
+                    Ya ves que en Ynteryor somos capaces de ofrecerte los materiales audiovisuales que necesitan tus argumentos de venta a partir de un solo proyecto. No dejes pasar la oportunidad de impulsar tu negocio con nuestra ayuda.
+                </p>
+                <a href="contacto.html" class="btn btn-primary">impulsa tus ventas</a>
+            </div>
+            
+            <div class="cp-resultado-final-media">
+                <img src="recursos/caso-practico/plano3d_fondo.jpg" alt="plano3d">
+                <video width="400" height="400" controls>
+                    <source src="recursos/caso-practico/Video_Salon_360.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
