@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="estilos/comparador.css">
     <link rel="recursos" href="recursos/">
+    <script src="script.js"></script>
     <title>Ynteryor | Diseño que impulsa tus ventas</title>
     <meta name="description" content="Pablo Elices's UX &amp; Product designer portfolio">
     <link rel="icon" type="image/png" href="recursos/favicon-ynteryor.png">
@@ -22,7 +23,7 @@
         <ul><a href="index.html"><img src="recursos/logo-negativo-ynteryor.svg" alt="YNTERYOR"></a></ul>
         <ul>
             <li><a href="caso_practico.html">Caso Práctico</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#quieres-saber-mas">Contacto</a></li>
         </ul>
     </nav>
     <section>
@@ -30,7 +31,7 @@
             <h1>Diseño que <br> <span>impulsa</span> tus ventas</h1>
             <div>
                 <p>En Ynteryor transformamos espacios para apoyar tus argumentos de venta. Vende mejor con nuestros diseños realistas. Son el impulso que necesitas para aumentar tus ventas.</p>
-                <a href="contacto.html" class="btn btn-primary"> impulsa tus ventas</a>
+                <a href="#quieres-saber-mas" class="btn btn-primary"> impulsa tus ventas</a>
             </div>
         </div>
         <div class="argumentos">
@@ -52,8 +53,9 @@
             </div>
         </div>
         <div id="que-hacemos">
-            <h2>¿Qué hacemos?</h2>
-            <div>
+            
+            <div class="flex-half column">
+                <h2>¿Qué hacemos?</h2>
                 <p>
                     En Ynteryor sabemos que <b>1 imagen > 1000 palabras</b>. Pero... ¿y si son muchas imágenes? ¿Y si son vídeos? ¿Y si son imágenes 360º interactivas? ¿Y si creamos recorridos virtuales? Esto es mucho más que palabras.
                 </p>
@@ -64,62 +66,46 @@
                 <p>
                     Queremos ayudarte a competir contra los grandes y que puedas salvar las ventas complicadas de aquellas propiedades que necesitan un impulso extra que las revitalice.
                 </p>
-                <a href="contacto.html" class="btn btn-secondary"> impulsa tus ventas</a>
+                <a href="#quieres-saber-mas" class="btn btn-secondary"> impulsa tus ventas</a>
             </div>
-            <img src="recursos/image-sofa-japandi.png" alt="salón con sofá modular japandi">
+            <div class="flex-half">
+                <div class="flotando">
+                    <img src="recursos/image-sofa-japandi.png" alt="salón con sofá modular japandi" id="flotando">
+                    <img src="recursos/image-sofa-japandi.png" alt="salón con sofá modular japandi" id="flotando2">
+                </div>
+                
+            </div>
         </div>
         <div id="como-lo-hacemos">
-            <div>
-                <h2>¿Cómo lo hacemos?</h2>
-                <p>
-                    En Ynteryor <b>fusionamos funcionalidad y estética</b> para ofrecer prácticos y encantadores espacios adaptados a los diferentes usos y estilos de vida actual.
-                </p>
-                <p>
-                    Nuestro meticuloso enfoque y atención al detalle nos permite crear interiores que no solo sean visualmente impactantes, sino que también sean altamente funcionales, optimizando el uso del espacio y facilitando la vida diaria de quienes podrían disfrutarlos.
-                </p>
-                <p>
-                    <b>Tú tienes <span>el control</span>.</b> Si quieres que nosotros nos encarguemos del control creativo y artístico estaremos encantados y si por contra, prefieres que nos ajustemos a tus directrices, también podemos hacerlo en el grado que mejor te venga. Desde limitarnos a seguir un plano e indicaciones precisas a orientarte en el diseño para que cumplas con los más altos criterios de funcionalidad y estética.
-                </p>
-                <a href="caso_practico.html">Ver caso práctico<img src="recursos/icono_referencia.svg" style="margin-left: 8px;"></a>
-            </div>
-
-            <div id="comparador">
-                <div class="container">
-                   <div class="image-container">
-                     <img
-                       class="image-before slider-image"
-                      src="recursos/caso-practico/antes_salon.jpg"
-                       alt="salon antes"
-                     />
-                     <img
-                       class="image-after slider-image"
-                       src="recursos/caso-practico/despues/despues_salon_1.jpg"
-                       alt="salon despues"
-                     />
-                   </div>
-                   <!-- step="10" -->
-                   <input
-                     type="range"
-                     min="0"
-                     max="100"
-                     value="50"
-                     aria-label="Percentage of before photo shown"
-                     class="slider"
-                   />
-                   <div class="slider-line" aria-hidden="true"></div>
-                   <div class="slider-button" aria-hidden="true">
-                     <img src="recursos/icono_tirador.svg" alt="">
-                   </div>
-                 </div>
-                 <script src="script.js"></script>
-           </div>
+                <div>
+                    <h2>¿Cómo lo hacemos?</h2>
+                    <p>
+                        En Ynteryor <b>fusionamos funcionalidad y estética</b> para ofrecer prácticos y encantadores espacios adaptados a los diferentes usos y estilos de vida actual.
+                    </p>
+                    <p>
+                        Nuestro meticuloso enfoque y atención al detalle nos permite crear interiores que no solo sean visualmente impactantes, sino que también sean altamente funcionales, optimizando el uso del espacio y facilitando la vida diaria de quienes podrían disfrutarlos.
+                    </p>
+                    <h3>¡Tú tienes <span>el control!</span></h3>
+                    <p>
+                        Si quieres que nosotros nos encarguemos de la dirección creativa y artística, estaremos encantados. Si por el contrario prefieres que nos ajustemos a tus directrices, también podemos hacerlo en el grado que mejor te venga.<br><br>Desde orientarte en el diseño para que cumplas con los más altos criterios de funcionalidad y estética hasta limitarnos a seguir tus planos e indicaciones. También podemos incluir los materiales de tus proveedores favoritos para que los diseños sean tal cual los deseas.
+                    </p>
+                    <a href="caso_practico.html">Ver caso práctico<img src="recursos/icono_referencia.svg" id="icono_referencia"></a>
+                </div>
+                <div class="flex-half"><img src="recursos/diferentesCocinas.png" alt=""></div>
+           
         </div>
         <div id="quieres-saber-mas">
-            <h2>¿Quieres saber más?</h2>
-            <p>
-                Si ya has visto el caso práctico y aún así tienes dudas de cómo Ynteryor te puede ayudar, o si tienes algún otro tipo de duda sobre nosotros o nuestros servicios, no dudes en ponerte en contacto para que podamos responder a tus preguntas.
-            </p>
-            <a href="contacto.html" class="btn btn-secondary"> contáctanos</a>
+            <div class="contact-information">
+                <h2>¿Quieres saber más? ¡Contáctanos!</h2>
+                <p>
+                    <!-- Si ya has visto el caso práctico y aún así tienes dudas de cómo Ynteryor te puede ayudar, o si tienes algún otro tipo de duda sobre nosotros o nuestros servicios, no dudes en ponerte en contacto para que podamos responder a tus preguntas. -->
+                    Si ya te has decidido a impulsar tus ventas o si quieres saber más, no dudes en ponerte en contacto con nosotros escribiéndonos a la siguiente dirección. <br><br>¡¡Estaremos encantados de contestarte!!
+                </p>
+                <div class="card-email"><a href="mailto:ynteryor.mail@gmail.com">ynteryor.mail@gmail.com</a></div>
+            </div>
+            <div class="contacto-images">
+                <img src="recursos/contact_images.png" alt="">
+            </div>
         </div>
     </section>
 </body>

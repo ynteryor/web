@@ -1,9 +1,3 @@
-const container = document.querySelector('.container');
-document.querySelector('.slider').addEventListener('input', (e) => {
-container.style.setProperty('--position', `${e.target.value}%`);
-})
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const thumbnails = document.querySelectorAll('.thumbnail');
