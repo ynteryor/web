@@ -135,6 +135,20 @@ p{
     background: #D8B86550;
     border-radius: var(--size-1x);
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 30px 5vw;
+    border-top: 1px solid var(--color-negro);
+    background-color: var(--color-beige);
+    gap: 1rem;
+}
+footer a{
+    color: var(--color-negro);
+}
+
 a[href="#quieres-saber-mas"]{
     scroll-behavior: smooth;
 }
@@ -318,6 +332,7 @@ a[href="#quieres-saber-mas"]{
     background-color: #1E1E1E60;
     border: 1px solid var(--color-negro);
     text-align: center;
+    margin: 1rem 0;
 }
 .card-email a{
     color: var(--color-blanco);
@@ -620,6 +635,10 @@ text-align: justify;
     .thumbnail{width: 40%;}
     .close{top: -60px;right: 20px;}
     .lightbox-content img{padding: 0 1rem;}
+    .nav-btn{top: unset; bottom: -50px;}
+    .nav-btn:active{transform: scale(.9);}
+    .prev-btn {left: calc(50% - 58px);}
+    .next-btn {right: calc(50% - 58px);}
 
     .cp-resultado-final{flex-direction: column;}
     .cp-resultado-final-content{width:100%;}
