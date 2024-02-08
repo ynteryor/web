@@ -24,6 +24,9 @@
 *{
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     line-height: normal;
@@ -147,10 +150,6 @@ footer{
 }
 footer a{
     color: var(--color-negro);
-}
-
-a[href="#quieres-saber-mas"]{
-    scroll-behavior: smooth;
 }
 
 /*definir estilos Index  / Main page*/
